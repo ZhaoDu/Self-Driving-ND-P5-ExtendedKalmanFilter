@@ -34,9 +34,14 @@ Please (do your best to) stick to [Google's C++ style guide](https://google.gith
 
 ## Results
 The following demo videos show the test results. In this demo, the RMSE of px,py,vx,vy was examined to check the performance of the implementation. The RMSE values are stated in the right of each video.
-|Dataset 1            |Dataset 2            |
-|:-------------------:|:-------------------:|
-|![left][image1]      |![left][image2]      |
+
+**Dataset 1**
+
+![left][image1]
+
+**Dataset 2**  
+
+![left][image2]      
 
 ## Tips
 
@@ -64,6 +69,7 @@ The following demo videos show the test results. In this demo, the RMSE of px,py
 1. Initialization
 2. Prediction
 3. Update
+
 ![ekf_vs_kf][image5]
 
 A standard Kalman filter can only handle linear equations. Both the Extended Kalman Filter (EKF) and the Unscented Kalman Filter (UKF will be disuccsed in the next project) allow you to use non-linear equations; the difference between EKF and UKF is how they handle non-linear equations: Extended Kalman Filter uses the Jacobian matrix to linearize non-linear functions; Unscented Kalman Filter, on the other hand, does not need to linearize non-linear functions, insteadly, the unscented Kalman filter takes representative points from a Gaussian distribution.
